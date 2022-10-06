@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as C from './App.styles';
 import { Category } from './types/Category';
-import { Item } from './types/Items';
+import { Item } from './types/Item';
 import { categories } from './data/categories';
 import { items } from './data/items';
 import { filterListByMonth, getCurrentMonth } from './helpers/dataFilters';
@@ -25,7 +25,7 @@ const App = () => {
 
       <C.Body>
         
-      <TableArea/>
+      <TableArea list={filteredList} />
 
       </C.Body>
 

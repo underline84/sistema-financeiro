@@ -1,4 +1,4 @@
-import { Item } from '../types/Items';
+import { Item } from '../types/Item';
 
 export const getCurrentMonth = () => {
     let now = new Date();
@@ -15,6 +15,5 @@ export const filterListByMonth = (list: Item[], date: string): Item[] => {
             newList.push(list[i]);
         }
     }
-
     return newList;
 }
